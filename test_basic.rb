@@ -21,4 +21,17 @@ class TestBasic < Minitest::Test
   def test_that_secure_random_alphanumeric
     assert_equal 15, @basic.secure_random_alphanumeric.size
   end
+
+  def test_that_array_push
+    assert_equal 5, @basic.array_push.size
+  end
+
+  def test_ヒアドキュメント
+    hoge = <<HOGE
+hoge
+  hoge
+    hoge
+HOGE
+    assert_equal hoge, @basic.here_document
+  end
 end
