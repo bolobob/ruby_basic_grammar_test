@@ -34,4 +34,8 @@ hoge
 HOGE
     assert_equal hoge, @basic.here_document
   end
+
+  def test_配列のeach
+    assert_equal 15, @basic.array_each
+  end
 end

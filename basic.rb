@@ -29,4 +29,12 @@ class Basic
           hoge
     HOGE
   end
+
+  def array_each
+    ret = 0
+    [1, 2, 3, 4, 5].each do |i|
+      ret += i
+    end
+    ret
+  end
 end
