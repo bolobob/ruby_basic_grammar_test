@@ -1,4 +1,5 @@
 require "minitest/autorun"
+require "Set"
 require "./basic"
 
 class TestBasic < Minitest::Test
@@ -37,5 +38,16 @@ HOGE
 
   def test_配列のeach
     assert_equal 15, @basic.array_each
+  end
+
+  def test_Set
+    assert_equal Set[false, 0,
+                     "0", :"0",
+                     "f", :f,
+                     "F", :F,
+                     "false", :false,
+                     "FALSE", :FALSE,
+                     "off", :off,
+                     "OFF", :OFF,], @basic.array_to_set
   end
 end
