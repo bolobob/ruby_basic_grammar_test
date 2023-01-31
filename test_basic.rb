@@ -50,4 +50,8 @@ HOGE
                      "off", :off,
                      "OFF", :OFF,], @basic.array_to_set
   end
+
+  def test_配列のmap
+    assert_equal [1, 4, 3, 8, 5], @basic.array_map
+  end
 end

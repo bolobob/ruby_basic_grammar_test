@@ -48,4 +48,11 @@ class Basic
      "off", :off,
      "OFF", :OFF,].to_set
   end
+
+  def array_map
+    [1, 2, 3, 4, 5].map do |i|
+      next i * 2 if i % 2 == 0
+      i
+    end
+  end
 end
