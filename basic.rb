@@ -55,4 +55,8 @@ class Basic
       i
     end
   end
+
+  def add_two(a)
+    a[0] += 2
+  end
 end

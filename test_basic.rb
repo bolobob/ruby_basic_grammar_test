@@ -54,4 +54,10 @@ HOGE
   def test_配列のmap
     assert_equal [1, 4, 3, 8, 5], @basic.array_map
   end
+
+  def test_共有渡し
+    a = [1, 2]
+    @basic.add_two(a)
+    assert_equal 3, a[0]
+  end
 end
