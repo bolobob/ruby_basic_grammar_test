@@ -59,4 +59,8 @@ class Basic
   def add_two(a)
     a[0] += 2
   end
+
+  def method_name
+    __callee__
+  end
 end

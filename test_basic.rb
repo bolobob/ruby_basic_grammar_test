@@ -60,4 +60,8 @@ HOGE
     @basic.add_two(a)
     assert_equal 3, a[0]
   end
+
+  def test_メソッド名
+    assert_equal :method_name, @basic.method_name
+  end
 end
